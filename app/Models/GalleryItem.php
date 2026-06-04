@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class GalleryItem extends Model
+{
+    protected $fillable = [
+        'label',
+        'image',
+        'span',
+        'sort_order',
+        'is_active',
+    ];
+}
