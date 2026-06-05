@@ -9,22 +9,12 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 COPY . .
 
-RUN composer install --no-dev --optimize-autoloader
+RUN mkdir -p database && touch database/database.sqlite
 
-EXPOSE 10000
 
-CMD php artisan serve --host=0.0.0.0 --port=10000
-
-RUN chmod -R 775 /app/storage /app/bootstrap/cache
-RUN chown -R www-data:www-data /app/storage /app/bootstrap/cache
+RUN chmod -R 777 /app/storage /app/bootstrap/cache /app/database
 
 RUN composer install --no-dev --optimize-autoloader
-
-# RUN php artisan config:clear
-# RUN php artisan config:cache
-
-RUN chmod -R 777 storage
-RUN chmod -R 777 bootstrap/cache
 
 EXPOSE 10000
 
