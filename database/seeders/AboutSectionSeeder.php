@@ -19,7 +19,7 @@ class AboutSectionSeeder extends Seeder
             'vision_text'   => 'To create a world where every child feels inspired to express, imagine, and publish their unique story.',
             'mission_title' => 'Our Mission',
             'mission_text'  => 'To nurture young writers through structured programs, storytelling experiences, and publishing opportunities that turn creativity into achievement.',
-            'stat_number'   => '500+',
+            'stat_number'   => '12+',
             'stat_label'    => 'Published Books',
             'btn_label'     => 'Explore Our Programs',
             'btn_url'       => '/programs',
