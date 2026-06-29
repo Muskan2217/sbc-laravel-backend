@@ -48,6 +48,23 @@ class AchieversSectionSeeder extends Seeder
                 'sort_order'        => 4,
                 'is_active'         => true,
             ],
+
+             [
+                'achievement_label' => 'NATIONAL WINNER 2024',
+                'name'              => 'Rohan Mehta',
+                'age'               => 9,
+                'image'             => 'rohan.jpg',
+                'sort_order'        => 2,
+                'is_active'         => true,
+            ],
+            [
+                'achievement_label' => 'PUBLISHED 3 BOOKS',
+                'name'              => 'Meera Iyer',
+                'age'               => 12,
+                'image'             => 'meera.jpg',
+                'sort_order'        => 3,
+                'is_active'         => true,
+            ],
         ];
 
         foreach ($achievers as $achiever) {

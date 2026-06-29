@@ -12,8 +12,8 @@ class CoursesSectionSeeder extends Seeder
     {
         CoursesSection::create([
             'badge'       => 'STRUCTURED PROGRAM',
-            'title'       => 'Word Ninjas — A Creative Writing Journey',
-            'description' => 'A four-level progression that grows with your child — from first sentences to a full manuscript.',
+            'title'       => 'Word Ninjas: <br> A Creative Writing Journey',
+            'description' => 'Prepare your child for The Grand Stage through an immersive, four-stage creative journey. Guided by trained experts, they will learn to channel their imagination from first sentences to a full manuscript. ',
             'cta_label'   => 'Enroll Your Child', 
             'cta_url'     => '/enroll',
             ]);

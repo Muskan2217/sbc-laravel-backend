@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\AuthController;
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HeroSliderController;
@@ -26,3 +27,14 @@ Route::get('/achievers-section', [AchieversSectionController::class, 'index']);
 Route::get('/gallery-section', [GallerySectionController::class, 'index']);
 Route::get('/contests', [ContestSectionController::class, 'contests']);
 Route::get('/winners', [ContestSectionController::class, 'winners']);
+
+
+// ─── AUTH ROUTES (public) ───
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
+
+// ─── AUTH ROUTES (protected) ───
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/logout', [AuthController::class, 'logout']);
+    Route::get('/me', [AuthController::class, 'me']);
+});

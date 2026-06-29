@@ -12,10 +12,10 @@ class ProgramSeeder extends Seeder
         Program::create([
             'badge'           => 'FLAGSHIP PROGRAM',
             'title'           => 'Budding Authors Contest',
-            'description'     => "India's most prestigious writing contest for children. Selected stories are professionally edited, illustrated, and published into a real book — listed on major marketplaces.",
+            'description'     => "An international launchpad for the next generation of authors. Here, young stories are beautifully edited, illustrated, and transformed into published works available on global bookshelves.",
             'image'           => 'program.jpg',
 
-            'feature_1_icon'  => '📖',
+            'feature_1_icon'  => '📒',
             'feature_1_title' => 'Published Book',
             'feature_1_text'  => 'Your child\'s name on a real book',
 

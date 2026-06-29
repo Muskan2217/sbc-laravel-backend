@@ -12,7 +12,7 @@ class PublishedBooksSectionSeeder extends Seeder
     {
         PublishedBooksSection::create([
             'badge'     => 'PUBLISHED BOOKS',
-            'title'     => 'Real Books. Real Authors. Real Children.',
+            'title'     => 'Original Stories. Young Authors. Real Books.',
             'btn_label' => 'View All Books',
             'btn_url'   => '/books',
         ]);

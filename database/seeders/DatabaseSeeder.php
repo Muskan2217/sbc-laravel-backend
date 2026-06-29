@@ -21,7 +21,8 @@ public function run(): void
         'email' => 'test@example.com',
     ]);
 
-    $this->call([
+   $this->call([
+    RolesAndPermissionsSeeder::class,
     HeroSliderSeeder::class,
     AboutSectionSeeder::class,
     ProgramSeeder::class,
